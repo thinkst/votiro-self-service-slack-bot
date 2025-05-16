@@ -1,0 +1,16 @@
+[Unit]
+Description=Votiro Self Service Slack Bot
+After=network.target
+
+[Service]
+User=ubuntu
+WorkingDirectory=/home/ubuntu/votiro_self_service
+EnvironmentFile=/home/ubuntu/votiro_self_service/.env
+ExecStart=/home/ubuntu/votiro_self_service/env/bin/python -u /home/ubuntu/votiro_self_service/bot.py
+Restart=always
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
