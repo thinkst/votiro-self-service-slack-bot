@@ -4,7 +4,7 @@ A tiny Votiro Slackbot that lets users release blocked attachments.
 
 # How do I use this?
 
-There is a single command that can be invoked with `/release_attachment`. A will open, asking for the Correlation ID of a blocked attachment(s). The correlation ID can be found in the default block noticed provided by Votiro. Given a valid correlation ID, the bot will release the withheld attachments to the original recipient (assuming there is only 1 valid release candidate).
+There is a single command that can be invoked with `/release_attachment`. A modal will open, asking for the Correlation ID of a blocked attachment(s). The correlation ID can be found in the default block noticed provided by Votiro. Given a valid correlation ID, the bot will release the withheld attachments to the original recipient (assuming there is only 1 valid release candidate).
 
 NOTE: In its curent iteration, there is a limitation that it can only release files if there is only one valid release candidate/recipient. If multiple are present, nothing will be released. Manual release will be required in such a case.
 
